@@ -1,0 +1,15 @@
+.dark-btn {
+    background: #333;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 3px;
+    padding: 10px 25px;
+}
+
+.red-btn {
+    background: $mainColor;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 3px;
+    padding: 10px 25px;
+}

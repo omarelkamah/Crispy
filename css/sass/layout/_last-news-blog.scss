@@ -1,0 +1,52 @@
+// Start lastes-news
+.lastes-news {
+    .lastes-news-img {
+        position: relative;
+        margin-bottom: 45px;
+        text-align: center;
+        .blog {
+            position: absolute;
+            display: inline-block;
+            padding: 7px 21px;
+            background: #fff;
+            color: $headingColor;
+            font-weight: bold;
+
+            &.right {
+                right: 6px;
+                top: 6px;
+            }
+            &.left {
+                left: 6px;
+                top: 6px;
+            }
+        }
+    }
+
+    .lastes-news-content {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        @media #{$minLarge} and #{$maxLarge} {
+            margin-top: 0;
+        }
+        .date {
+            display: inline-block;
+            color: $parColor;
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 16px;
+        }
+
+        .lastes-news-header {
+            font-size: 23px;
+            margin-bottom: 16px;
+            color: $headingColor;
+        }
+
+        .lastes-news-desc {
+            color: $parColor;
+            margin-bottom: 16px;
+            @include lineHeight;
+        }
+    }
+}

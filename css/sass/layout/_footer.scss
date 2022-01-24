@@ -1,0 +1,147 @@
+footer {
+    padding: 80px 0 0 0;
+    background: #191919;
+    color: $parColor;
+
+    .crispy {
+        margin-bottom: 30px;
+        .crispy-header {
+            color: #eee;
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 24px;;
+            @include letterSpacing;
+        }
+        .crispy-desc {
+            margin-bottom: 24px;;
+            @include lineHeight;
+        }
+        .crispy-number {
+            font-size: 20px;
+            font-weight: normal;
+            span {
+                color: $mainColor;
+            }
+        }
+    }
+
+    .address {
+        margin-bottom: 30px;
+
+        .address-header {
+            color: #eee;
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 24px;;
+            @include letterSpacing;
+        }
+        .address-info {
+            li {
+                @include lineHeight;
+                margin-bottom: 9px;
+                a {
+                    color: $parColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .quick-links {
+        .quick-links-header {
+            color: #eee;
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 24px;;
+            @include letterSpacing;
+        }
+        .quick-links-info {
+            li {
+                margin-bottom: 9px;
+                @include letterSpacing;
+                a {
+                    color: $parColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        .subscribe-header {
+            color: #eee;
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 24px;;
+            @include letterSpacing;
+        }
+        span {
+            font-size: 17px;
+            margin-bottom: 17px;
+            display: block;
+        }
+
+        form {
+            .form-control:focus {
+                box-shadow: none;
+            }
+            input[type="email"] {
+                border-radius: 0;
+                color: $parColor;
+            }
+            input[type="submit"] {
+                width: 34%;
+                background: $mainColor;
+                border-radius: 0;
+                color: #fff;
+            }
+        }
+
+        .social-icons {
+            margin-top: 17px;
+            li {
+                display: inline-block;
+                a {
+                    color: $parColor;
+                    font-size: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 50px;
+        padding: 25px 0;
+        border-top: 1px solid #555;
+        position: relative;
+        @media #{$extraSmall} {
+            padding: 22px 0 49px 0;
+        }
+        p {
+            margin: 0;
+            @media #{$extraSmall} {
+                margin-bottom: 15px;
+            }
+        }
+
+        .scroll-to-top {
+            position: absolute;
+            bottom: 17px;
+            right: 17px;
+            background: #333;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            font-size: 12px;
+            @media #{$extraSmall} {
+                right: 50%;
+                transform: translateX(50%);
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+}

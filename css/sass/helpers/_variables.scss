@@ -1,0 +1,26 @@
+/* Media Query Variables */
+$maxMobile: 767px;
+$minSmall: 768opx;
+$maxSmall: 991px;
+
+
+/* Create Main Color In Wepsite */
+$mainColor: #f85a40;
+$parColor: #777;
+$mainBackground: #f8f9fa;
+$headingColor: #353c4e;
+
+$facebookColor: #3b5998;
+$twitterColor: #1da1f2;
+$googleplusColor: #dd4b39;
+$dribbleColor: #ea4c89fc;
+$pinterestColor: #bd081c;
+
+/* For Media Query */
+$extraSmall: (max-width: 576px);
+$minSmall: (min-width: 576px);
+$maxSmall: (max-width: 767px);
+$minMedium: (min-width: 768px);
+$maxMedium: (max-width: 991px);
+$minLarge: (min-width: 992px);
+$maxLarge: (max-width: 1199px);

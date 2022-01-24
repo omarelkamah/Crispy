@@ -1,0 +1,136 @@
+// Stat NavBar 1
+.navbar1 {
+    background: #0D1326;
+    padding: 10px 0;
+    box-shadow: 0 1px 10px rgba(13, 19, 38, 0.5);
+    .content {
+        display: flex;
+        font-size: 17px;
+        .back {
+            flex-grow: 1;
+            a {
+                color: #9598a5;
+                i {
+                    margin-right: 5px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .buy {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+
+            a {
+                margin-right: 25px;
+                color: #9598a5;
+                text-decoration: none;
+
+                i {
+                    margin-right: 5px;
+                    font-size: 20px;
+                    
+                }
+
+                &.buy-link {
+                    color: #e6ebff;
+                    .icon-buy {
+                        color: royalblue;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+// End NavBar 1
+
+
+// Start NavBar 2
+.navbar2 {
+    background: #333;
+    color: #eee;
+    padding: 10px 0;
+    .info {
+        ul {
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+
+                @media #{$extraSmall} {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 5px;
+                
+                }
+
+                &.li-call {
+                    @include letterSpacing;
+                }
+
+                a {
+                    color: #eee;
+                    text-decoration: none;
+                }
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .date {
+        display: flex;
+        justify-content: flex-end;
+        @include letterSpacing;
+        @media #{$extraSmall} {
+            justify-content: center;
+        }
+    }
+}
+
+
+// Start Main NavBar
+.navbar {
+    background: $mainColor;
+    a {color: #fff !important;}
+
+    .navbar-brand {
+        font-size: 33px;
+        font-weight: bold;
+        @include letterSpacing;
+    }
+
+    .links-content {
+        justify-content: flex-end;
+
+        ul {
+            li {
+                font-size: 17px;
+                text-transform: capitalize;
+                @include letterSpacing;
+
+                @media #{$extraSmall} {
+                    text-align: center;
+                }
+
+                a.active {
+                    background-color: #fff;
+                    color: $mainColor !important;
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
+                    font-size: 17px;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+                    @media #{$extraSmall} {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

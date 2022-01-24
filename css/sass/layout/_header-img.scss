@@ -1,0 +1,13 @@
+.header-img {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background: url("../img/banner/innerbg.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    .overlay {
+        @include overlay;
+        background: rgba(0, 0, 0, 0.2)
+    }
+}

@@ -1,0 +1,35 @@
+// Start Contact 
+.contact {
+    margin-top: 80px;
+    padding: 60px 0;
+    background: $mainColor;
+    color: #fff;
+
+    .contact-header {
+        font-size: 37px;
+        font-weight: normal;
+        margin-bottom: 16px;
+        @include letterSpacing;
+        @media #{$maxSmall} {
+            font-size: 21px !important;
+        }
+    }
+
+    .contact-desc {
+        margin-bottom: 16px;
+        @include letterSpacing;
+        @media #{$extraSmall} {
+            font-size: 14px;
+        }
+    }
+
+    .contact-number {
+        display: block;
+        font-size: 40px;
+        @include letterSpacing;
+        @media #{$extraSmall} {
+            font-size: 26px;
+        }
+        
+    }
+}

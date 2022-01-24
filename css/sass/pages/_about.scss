@@ -1,0 +1,94 @@
+// Start Section Our Shef
+.our-shef {
+    .shef-img-container {
+        position: relative;
+        overflow: hidden;
+        
+        &:hover {
+            .overlay {
+                visibility: visible;
+                opacity: 1;
+                .overlay-info {
+                    top: 40px;
+                    visibility: visible;
+                }
+                .overlay-icon {
+                    ul {
+                        bottom: 0;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .overlay {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            border: 12px solid rgba(0, 0, 0, 0.1);
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            visibility: hidden;
+            opacity: 0;
+            @include transition3s;
+
+            .overlay-info {
+                position: relative;
+                top: -107px;
+                visibility: hidden;
+                transition: all .3s .2s ease-in-out;
+                .overlay-info-header {
+                    color: #eee;
+                    font-weight: normal;
+                    margin-bottom: 15px;
+                    @include letterSpacing;
+                }
+                .overlay-info-desc {
+                    color: #aaa;
+                    font-size: 14px;
+                    @include letterSpacing;
+                }
+            }
+
+            .overlay-icon {
+                ul {
+                    padding-left: 0;
+                    list-style: none;
+                    position: absolute;
+                    width: 100%;
+                    bottom: -107px;
+                    visibility: hidden;
+                    transition: all .3s .2s ease-in-out;
+                    li {
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        background: rgba(0, 0, 0, 0.3);
+                        a {
+                            .fa-facebook {color: $facebookColor;}
+                            .fa-twitter {color: $twitterColor;}
+                            .fa-google-plus {color: $googleplusColor;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .shef-info {
+        margin: 20px 0;
+        h3 {
+            color: $headingColor;
+            font-weight: normal;
+            font-size: 22px;
+            margin: 0;
+            @include letterSpacing;
+        }
+        span {
+            color: $parColor;
+            font-size: 12px;
+            @include letterSpacing;
+        }
+    }
+}

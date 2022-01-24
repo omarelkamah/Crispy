@@ -1,0 +1,221 @@
+.section-blog-post {
+    padding-bottom: 40px;
+    .blog-post {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 4px;
+        overflow: hidden;
+
+        .blog-content {
+            padding: 12px;
+            
+            
+            .blog-icon {
+                ul {
+                    margin: 0;
+                    margin-top: 20px;
+                    li {
+                        display: inline-block;
+                        color: #8c9398;
+                        margin-right: 10px;
+                    }
+                }
+            }
+    
+            .blog-info {
+                .blog-header {
+                    font-size: 24px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    @include letterSpacing;
+                    a {
+                        color: $headingColor;
+                        text-decoration: none;
+                    }
+                }
+                .blog-desc {
+                    color: $parColor;
+                    margin-bottom: 20px;
+                    @include lineHeight;
+                }
+            }
+        }
+    }
+
+    .blog-comments {
+        .blog-comments-title {
+            color: #555;
+            font-size: 22px;
+            margin-bottom: 30px;
+            @include letterSpacing;
+        }
+
+        .client {
+            position: relative;
+            .img-container {
+                position: absolute;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            .client-content {
+                margin-left: 120px;
+                margin-bottom: 55px;
+                .client-name {
+                    font-weight: normal;
+                    font-size: 20px;
+                    color: #212529;
+                }
+                .client-comment {
+                    color: $parColor;
+                    @include lineHeight;
+                }
+            }
+        }
+    }
+
+    .leave-comment {
+        .leave-comment-title {
+            color: #555;
+            font-size: 22px;
+            @include letterSpacing;
+            margin-bottom: 30px;
+        }
+        form {
+            input {
+                margin-bottom: 10px;
+                border-radius: 4px;
+            }
+            textarea {
+                resize: none;
+                margin-bottom: 10px;
+                height: 150px;
+                border-radius: 4px;
+            }
+            input[type="submit"] {
+                width: 130px;
+            }
+        }
+    }
+
+
+    .blog-said {
+        .sign-up {
+            .sign-up-title {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+            .sign-up-desc {
+                color: $parColor;
+            }
+            form {
+                input {
+                    margin-bottom: 10px;
+                    border-radius: 4px;
+                }
+                input[type="submit"] {
+                    width: 100%;
+                    padding: 6px 0;
+                }
+            }
+        }
+
+        .categories {
+            margin-top: 20px;
+            .categories-title {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
+            ul {
+                li {
+                    position: relative;
+                    padding: 10px 20px;
+                    border: 1px solid rgba(0, 0, 0, 0.125);
+                    color: #727373;
+                    font-size: 15px;
+                    span {
+                        position: absolute;
+                        right: 12px;
+                        top: 31%;
+                        min-width: 25px;
+                        border-radius: 33%;
+                        background: #f85a40;
+                        color: #fff;
+                        text-align: center;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .top-stories {
+            margin-top: 40px;
+            .top-stories-title {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .storie {
+                margin-bottom: 20px;
+                .img-container {
+                    overflow: hidden;
+                    @media #{$minLarge} {
+                        height: 75.0156px;
+                    }
+                    img {
+                        border-radius: 4px;
+                    }
+                }
+                .storie-content {
+                    .storie-content-title {
+                        font-size: 16px;
+                        
+                        a {
+                            color: #333;
+                            text-decoration: none;
+                        }
+                    }
+                    .date {
+                        display: block;
+                        color: #a9abad;
+                        font-size: 14px;
+                        i {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .stay-contact {
+            .stay-contact-title {
+                font-size: 22px;
+                margin-top: 30px;
+                margin-bottom: 15x;
+                @include letterSpacing;
+            }
+            ul {
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        color: #fff;
+                        text-decoration: none;
+                        @include transition3s;
+                        &:hover {opacity: .8;}
+                        &.twitter {background: $twitterColor;}
+                        &.facebook {background: $facebookColor;}
+                        &.dribble {background: $dribbleColor;}
+                        &.pinterest {background: $pinterestColor;}
+                        span {
+                            text-indent: 25px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

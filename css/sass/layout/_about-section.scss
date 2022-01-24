@@ -1,0 +1,51 @@
+// Start Section About
+.about-us {
+    padding: 40px 0;
+
+    .about-us-section1 {
+        margin-bottom: 50px;
+        .heading-section {
+            font-weight: 400;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: $headingColor;
+            @include letterSpacing;
+        }
+        .desc-section {
+            color: $parColor;
+            width: 93%;
+            font-size: 17px;
+            margin-bottom: 35px;
+            @include lineHeight;
+        }
+
+        .for-icon {
+            margin-bottom: 30px;
+            li {
+                display: inline-block;
+                margin-bottom: 20px;
+                font-weight: 500;
+                @include letterSpacing;
+                i {
+                    display: block;
+                    font-size: 40px;
+                    color: #fff;
+                    background: $mainColor;
+                    width: 87.5938px;
+                    margin: 0 auto 12px;
+                    height: 87px;
+                    line-height: 87px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .img-container {
+        margin-bottom: 40px;
+        text-align: center;
+        img {
+            padding: 0 16px;
+        }
+    }
+}
